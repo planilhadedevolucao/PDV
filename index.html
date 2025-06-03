@@ -8,18 +8,21 @@
 </head>
 <body>
   <div class="conteiner">
-  <h1>Planilha de Notas</h1>
+  <h1>Planilha de Notas</h1> 
   <form id="form-notas">
+    <div class="linha"></div>
     <div class="input">
     <label for="notas-emitidas">Notas Emitidas:</label>
     <input type="number" id="notas-emitidas" name="notas-emitidas">
     <br>
   </div>
+  <div class="linha"></div>
   <div class="input">
     <label for="notas-devolvidas">Notas Devolvidas:</label>
     <input type="number" id="notas-devolvidas" name="notas-devolvidas">
     <br>
   </div>
+  <div class="linha"></div>
     <button id="adicionar">Calcular</button>
   </form>
   <div id="resultado">
@@ -27,6 +30,7 @@
     <p>Total de Notas Devolvidas: <span id="total-notas-devolvidas">0</span></p>
     <p>Porcentagem Total de Notas Devolvidas: <span id="porcentagem-total">0%</span></p>
   </div>
+  <button id="atualizar">Atualizar Pagina</button>
 </div>
   <script src="script.js"></script>
 </body>
