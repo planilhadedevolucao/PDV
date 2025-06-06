@@ -41,3 +41,27 @@ adicionarButton.addEventListener("click", (e) => {
     alert("Por favor, insira valores numéricos válidos.");
   }
 });
+
+function atualizarRelogio() {
+  var agora = new Date();
+  var horas = agora.getHours();
+  var minutos = agora.getMinutes();
+  var segundos = agora.getSeconds();
+  var dia = agora.getDate();
+  var mes = agora.getMonth() + 1;
+  var ano = agora.getFullYear();
+
+  horas = horas < 10 ? "0" + horas : horas;
+  minutos = minutos < 10 ? "0" + minutos : minutos;
+  segundos = segundos < 10 ? "0" + segundos : segundos;
+  dia= dia < 10 ? "0" + dia : dia;
+  mes= mes < 10 ? "0" + mes : mes;
+  ano= ano < 10 ? "0" + ano : ano;
+
+  var relogioElement = document.getElementById("relogio");
+  relogioElement.innerHTML =  dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos + ":" + segundos;
+
+  setTimeout(atualizarRelogio, 1000);
+}
+
+atualizarRelogio();
