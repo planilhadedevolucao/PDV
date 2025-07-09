@@ -146,6 +146,11 @@ h3 {
 
 h5 {
   font-family: sans-serif;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: rgb(7, 1, 1);
+  position: relative;
 }
 
 .text {
@@ -160,13 +165,9 @@ h5 {
 footer {
   display: flex;
   top: 55px;
+  text-align: center;
+  justify-content: center;
   align-items: center;
-  width: 93%;
-  height: 15px;
-  border-radius: 6px;
-  background: #ffffff;
-  color: rgb(7, 1, 1);
-  padding: 10px;
   position: relative;
 }
 
