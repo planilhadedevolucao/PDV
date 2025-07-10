@@ -45,6 +45,22 @@ img {
   position: absolute;
   top: 7px;
   left: 2px;
+  box-shadow: #ffffff 0px 0px 10px;
+  border-radius: 50px;
+}
+
+figcaption {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55px;
+  left: 1px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #070606;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .linha {
@@ -64,7 +80,7 @@ img {
   font-size: 40px;
   font: bold 2.5rem serif;
   border-bottom: solid 5px black;
-  margin-bottom: 20px;
+  margin-bottom: -20px;
 }
 
 .input {
@@ -164,7 +180,7 @@ h5 {
 
 footer {
   display: flex;
-  top: 55px;
+  top: 30px;
   text-align: center;
   justify-content: center;
   align-items: center;
