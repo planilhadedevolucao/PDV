@@ -63,6 +63,13 @@ figcaption {
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
+::placeholder{
+  color:#ccc;
+  font-size:14px;
+  
+ 
+}
+
 .linha {
   border-bottom: 1px solid #0f0707;
   padding-bottom: 10px;

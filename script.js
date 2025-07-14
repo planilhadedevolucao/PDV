@@ -54,12 +54,23 @@ function atualizarRelogio() {
   horas = horas < 10 ? "0" + horas : horas;
   minutos = minutos < 10 ? "0" + minutos : minutos;
   segundos = segundos < 10 ? "0" + segundos : segundos;
-  dia= dia < 10 ? "0" + dia : dia;
-  mes= mes < 10 ? "0" + mes : mes;
-  ano= ano < 10 ? "0" + ano : ano;
+  dia = dia < 10 ? "0" + dia : dia;
+  mes = mes < 10 ? "0" + mes : mes;
+  ano = ano < 10 ? "0" + ano : ano;
 
   var relogioElement = document.getElementById("relogio");
-  relogioElement.innerHTML =  dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos + ":" + segundos;
+  relogioElement.innerHTML =
+    dia +
+    "/" +
+    mes +
+    "/" +
+    ano +
+    " - " +
+    horas +
+    ":" +
+    minutos +
+    ":" +
+    segundos;
 
   setTimeout(atualizarRelogio, 1000);
 }
