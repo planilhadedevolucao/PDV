@@ -1,3 +1,15 @@
+// Preloader
+window.addEventListener("load", function () {
+  const preload = document.getElementById("preload");
+  const body = document.getElementById("body");
+
+  // Hide preloader and show content
+  this.setTimeout(() => {
+    preload.style.display = "none"; // Hide preloader
+    body.style.display = "block"; // Show content
+  }, 2000);
+});
+
 const form = document.getElementById("form-notas");
 const adicionarButton = document.getElementById("adicionar");
 const totalNotasEmitidasElement = document.getElementById(

@@ -9,6 +9,27 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.preload {
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  opacity: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px auto;
+  margin: 10% auto;
+  background-color: #70a575;
+  background-image: url("../img/logo.gif");
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-position: center; 
+}
+
+
 main {
   box-sizing: border-box;
   display: flex;
@@ -30,7 +51,7 @@ main {
   border-radius: 20px;
   box-shadow: 0 0 10px black;
 }
-img:hover {
+.info:hover {
   transform: rotate(360deg);
 }
 
