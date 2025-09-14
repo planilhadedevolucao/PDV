@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.preload {
+.preloader {
   display: flex;
   position: fixed;
   z-index: 99999;
@@ -44,8 +44,8 @@ main {
   display: flex;
   flex-direction: column;
   background: rgb(185, 218, 67);
-  width: 400px;
-  height: 750px;
+  width: 500px;
+  height: 700px;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 20px;

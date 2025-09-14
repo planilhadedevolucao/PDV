@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planilha de Notas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Planilha de Notas</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-   <div id="preloader">
-            <img src="img/logo.gif" alt="Carregando..."
-            id="preload" class="preload"></div>
-
-            <div id="body" style="display: none;">
-
-  <main>
-    <div class="conteiner">
-      <div id="relogio"></div>
-      <a href="configuracao.html" class="engrenagem-button">
-        <img src="img/info1.png" class="info" alt="info" /></a>
-      <figcaption><u>Info</u></figcaption>
-      <div class="title">CNED</div>
-      <form id="form-notas">
-        <div class="input">
-          <label for="notas-emitidas">Notas Entregues:</label>
-          <input type="number" id="notas-emitidas" placeholder=" Total de Notas Entregues " name="notas-emitidas" />
-          <br />
-        </div>
-        <div class="linha"></div>
-        <div class="input">
-          <label for="notas-devolvidas">Notas Devolvidas:</label>
-          <input type="number" id="notas-devolvidas" placeholder=" Total de Notas Devolvidas "
-            name="notas-devolvidas" />
-          <br />
-        </div>
-        <div class="linha"></div>
-        <button id="adicionar">Calcular</button>
-      </form>
-      <div id="resultado">
-        <p>
-          Total de Notas Entregues: <span id="total-notas-emitidas">0</span>
-        </p>
-        <div class="linha"></div>
-        <p>
-          Total de Notas Devolvidas:
-          <span id="total-notas-devolvidas">0</span>
-        </p>
-        <div class="linha"></div>
-        <p>
-          Porcentagem Total de Notas Devolvidas:
-          <span id="porcentagem-total">0%</span>
-        </p>
-      </div>
-      <button id="atualizar">Limpar Dados</button>
-
-      <h5>
-        &copy; 2025 CNED.<br />
-        Marcus Vinicius. Todos os direitos reservados.
-      </h5>
+  <body>
+    <div id="preloader">
+      <img
+        src="img/logo.gif"
+        alt="Carregando..."
+        id="preloader"
+        class="preloader"
+      />
     </div>
-  </main>
- </div>
 
-  <script src="script.js"></script>
-</body>
+    <div id="body" style="display: none">
+      <main>
+        <div class="conteiner">
+          <div id="relogio"></div>
+          <a href="configuracao.html" class="engrenagem-button">
+            <img src="img/info1.png" class="info" alt="info"
+          /></a>
+          <figcaption><u>Info</u></figcaption>
+          <div class="title">CNED</div>
+          <form id="form-notas">
+            <div class="input">
+              <label for="notas-emitidas">Notas Entregues:</label>
+              <input
+                type="number"
+                id="notas-emitidas"
+                placeholder=" Total de Notas Entregues "
+                name="notas-emitidas"
+              />
+              <br />
+            </div>
+            <div class="linha"></div>
+            <div class="input">
+              <label for="notas-devolvidas">Notas Devolvidas:</label>
+              <input
+                type="number"
+                id="notas-devolvidas"
+                placeholder=" Total de Notas Devolvidas "
+                name="notas-devolvidas"
+              />
+              <br />
+            </div>
+            <div class="linha"></div>
+            <button id="adicionar">Calcular</button>
+          </form>
+          <div id="resultado">
+            <p>
+              Total de Notas Entregues: <span id="total-notas-emitidas">0</span>
+            </p>
+            <div class="linha"></div>
+            <p>
+              Total de Notas Devolvidas:
+              <span id="total-notas-devolvidas">0</span>
+            </p>
+            <div class="linha"></div>
+            <p>
+              Porcentagem Total de Notas Devolvidas:
+              <span id="porcentagem-total">0%</span>
+            </p>
+          </div>
+          <button id="atualizar">Limpar Dados</button>
 
+          <h5>
+            &copy; 2025 CNED.<br />
+            Marcus Vinicius. Todos os direitos reservados.
+          </h5>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
