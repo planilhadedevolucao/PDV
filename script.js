@@ -1,13 +1,17 @@
 // Preloader
-window.addEventListener("load", function () {
-  const preload = document.getElementById("preload");
+window.addEventListener("pageshow", (event) => {
+  const preloader = document.getElementById("preloader");
   const body = document.getElementById("body");
 
-  // Hide preloader and show content
-  this.setTimeout(() => {
-    preload.style.display = "none"; // Hide preloader
-    body.style.display = "block"; // Show content
-  }, 2000);
+  if (document.referrer && document.referrer.includes(window.location.origin)) {
+    preloader.style.display = "none";
+    body.style.display = "block";
+  } else {
+    setTimeout(() => {
+      preloader.style.display = "none";
+      body.style.display = "block";
+    }, 2000);
+  }
 });
 
 const form = document.getElementById("form-notas");
